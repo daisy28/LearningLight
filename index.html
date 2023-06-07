@@ -8,12 +8,17 @@
      <title>LearningLight</title>
 </head>
 <body>
+     
      <navigation class="navigation">
           <div class="brand">
                <ion-icon name="sunny" class="brand_icon"></ion-icon>
                <h1 class="brand_name ">LearningLight</h1>
                <ion-icon name="caret-forward" class="menu_toggle"></ion-icon>
           </div>
+          <!-- <div class="search_input_div">
+               <input type="text" name="search" id="search" placeholder="Search" class="search_input">
+               <ion-icon name="search" class="search_icon"></ion-icon>
+          </div> -->
           <div class="nav_links">
                <div class="nav_link">
                     <ion-icon name="home" class="home"></ion-icon>
@@ -76,8 +81,24 @@
                     </div>
                </div>
           </div>
-
+          <div class="wrapper"></div>
      </navigation>
+     <header class="header">
+          <!-- <div class="brand">
+               <ion-icon name="sunny" class="brand_icon"></ion-icon>
+               <h1 class="brand_name ">LearningLight</h1>
+               <ion-icon name="caret-forward" class="menu_toggle"></ion-icon>
+          </div> -->
+          <div class="search_input_div">
+               <input type="text" name="search" id="search" placeholder="Search" class="search_input">
+               <ion-icon name="search" class="search_icon"></ion-icon>
+          </div>
+          <div class="user_info">
+               <ion-icon name="notifications" class="bell_icon"></ion-icon>
+               <div class="user_image_div"></div>
+               <p class="user_name">Debra Cooper</p>
+          </div>
+     </header>
      
 
 
@@ -89,8 +110,11 @@
      let navigation = document.querySelector(".navigation");
      let toggle = document.querySelector(".menu_toggle");
      let main = document.querySelector("main");
+     let header = document.querySelector("header");
+
      toggle.addEventListener("click", () => {
      navigation.classList.toggle("active");
+     header.classList.toggle("active")
      });
      
 </script>

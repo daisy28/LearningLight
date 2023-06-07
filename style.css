@@ -13,16 +13,33 @@ body {
      font-family: 'Work Sans', sans-serif;
 }
 
+.wrapper {
+     position: fixed;
+     height: 100vh;
+     right: 0;
+     top: 0;
+     bottom: 0;
+}
+
+ .navigation.active .wrapper  {
+     background-color: #76768b7f;
+     left: 210px;
+     transition: 0.5s;
+}
+
 .navigation {
      border-right: 1px solid #F3F4FE;
      width: 60px;
      height: 100vh;
      position: fixed;
      left: 0;
+     bottom: 0;
      top: 0;
      transition: 0.5s;
      overflow: hidden;
      overflow-y: scroll;
+     z-index: 99;
+     background-color: #ffffff;
 }
 
 .navigation::-webkit-scrollbar{
@@ -30,26 +47,27 @@ body {
 }
 
 .navigation::-webkit-scrollbar-track{
-     background-color: #f3f4fe;
+     background-color: #f7f8fe;
      border-radius: 2px;
-     box-shadow: inset 0 0 5px rgb(229, 225, 225);
+     box-shadow: inset 0 0 5px rgb(241, 238, 238);
 }
 
 .navigation::-webkit-scrollbar-thumb{
-     background-color: #f3f4fe;
+     background-color: #f6f7fd;
 }
 
 .navigation.active {
      width: 210px;
      transition: 0.5s;
-     z-index: 5;
+     z-index: 99;
 }
 
 .brand {
      display: flex;
      align-items: center;
-     margin-bottom: 2rem;
      padding: 1rem;
+     height: 70px;
+     border-bottom: 1px solid #F3F4FE;
 }
 
 .brand_name {
@@ -80,6 +98,7 @@ body {
 .nav_links {
      padding-bottom: 2rem;
      border-bottom: 1px solid #F3F4FE;
+     margin-top: 3rem;
 }
 
 .nav_link {
@@ -180,6 +199,69 @@ body {
 
 progress {
      height: 6px;
-     /* background-color: #efeffb; */
 }
+
+.header {
+     background-color: #fff;
+     position: fixed;
+     padding: 1rem .5rem;
+     border-bottom: 1px solid #F3F4FE;
+     top: 0;
+     left: 60px;
+     right: 0;
+     height: 70px;
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+}
+
+.search_input_div {
+     position: relative;
+     width: 140px;
+}
+
+.search_input {
+     width: 100%;
+     background-color: #EFF0FF;
+     padding: .4rem;
+     padding-left: 2rem;
+     outline: none;
+     border-radius: 8px;
+     border: none;
+     color: #A8ACD2;
+     font-size: .7rem;
+}
+
+.search_icon {
+     position: absolute;
+     left: 10px;
+     top: 5px;
+     color: #A8ACD2;
+}
+
+.user_info{
+     display: flex;
+     align-items: center;
+     position: relative;
+}
+
+.bell_icon {
+     color: #2E3059;
+     font-size: 1.1rem;
+     cursor: pointer;
+}
+.user_image_div {
+     width: 20px;
+     height: 20px;
+     border-radius: 50%;
+     background-color: #767792;
+     margin-left: .8rem;
+}
+
+.user_name {
+     font-size: .8rem;
+     margin-left: .4rem;
+     color: #8F82A4;
+}
+
 
