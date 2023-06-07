@@ -264,4 +264,12 @@ progress {
      color: #8F82A4;
 }
 
+.main {
+     position: relative;
+     padding: 1rem;
+     left: 60px;
+     top: 70px;
+     width: calc(100% - 60px);
+}
+
 
