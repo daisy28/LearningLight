@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="style.css">
+     <title>LearningLight</title>
+</head>
+<body>
+     <navigation class="navigation">
+          <div class="brand">
+               <ion-icon name="sunny" class="brand_icon"></ion-icon>
+               <h1 class="brand_name ">LearningLight</h1>
+               <ion-icon name="caret-forward" class="menu_toggle"></ion-icon>
+          </div>
+          <div class="nav_links">
+               <div class="nav_link">
+                    <ion-icon name="home" class="home"></ion-icon>
+                    <a href="home" class="home_link">Home</a>
+               </div>
+               <div class="nav_link">
+                    <ion-icon name="school" class="courses"></ion-icon>
+                    <a href="home" class="">Courses</a>
+               </div>
+               <div class="nav_link">
+                    <ion-icon name="bulb" class="training"></ion-icon>
+                    <a href="home" class="">Training</a>
+               </div>
+               <div class="nav_link">
+                    <ion-icon name="pie-chart" class="statistics"></ion-icon>
+                    <a href="home" class="">Statistics</a>
+               </div>
+               <div class="nav_link">
+                    <ion-icon name="cog" class="settings"></ion-icon>
+                    <a href="home" class="">Settings</a>
+               </div>
+          </div>
+
+          <div class="work_progress">
+               <div class="work_progress_div">
+                    <ion-icon name="book" class="book"></ion-icon>
+                    <a href="homework">Homework</a>
+                    <ion-icon name="arrow-forward" class="arrow"></ion-icon>
+               </div>
+               <div class="composition">
+                    <label for="composition">Basics of Composition</label>
+                    <progress id="composition" value="80" max="100">80%</progress>
+                    <div class="composition_stats">
+                         <p>4/5</p>
+                         <p>80%</p>
+                    </div>
+               </div>
+               <div class="typography">
+                    <label for="typography">Typography Basics</label>
+                    <progress id="typography" value="60" max="100">60%</progress>
+                    <div class="typography_stats">
+                         <p>3/5</p>
+                         <p>60%</p>
+                    </div>
+               </div>
+               <div class="color">
+                    <label for="color">Color Basics</label>
+                    <progress id="color" value="40" max="100">40%</progress>
+                    <div class="color_stats">
+                         <p>2/5</p>
+                         <p>40%</p>
+                    </div>
+               </div>
+               <div class="mesh">
+                    <label for="mesh">Modular Mesh</label>
+                    <progress id="mesh" value="60" max="100">40%</progress>
+                    <div class="mesh_stats">
+                         <p>3/5</p>
+                         <p>60%</p>
+                    </div>
+               </div>
+          </div>
+
+     </navigation>
+     
+
+
+
+
+ <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+<script>
+     let navigation = document.querySelector(".navigation");
+     let toggle = document.querySelector(".menu_toggle");
+     let main = document.querySelector("main");
+     toggle.addEventListener("click", () => {
+     navigation.classList.toggle("active");
+     });
+     
+</script>
+</body>
+</html>

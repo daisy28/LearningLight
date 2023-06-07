@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&family=Work+Sans:wght@100;200;300;400;500;600;700&display=swap');
+
+* {
+     box-sizing: border-box;
+     margin: 0;
+     padding: 0;
+     list-style: none;
+     text-decoration: none;
+}
+
+body {
+     font-family: 'Roboto', sans-serif;
+     font-family: 'Work Sans', sans-serif;
+}
+
+.navigation {
+     border-right: 1px solid #F3F4FE;
+     width: 60px;
+     height: 100vh;
+     position: fixed;
+     left: 0;
+     top: 0;
+     transition: 0.5s;
+     overflow: hidden;
+     overflow-y: scroll;
+}
+
+.navigation::-webkit-scrollbar{
+     width: 2px;
+}
+
+.navigation::-webkit-scrollbar-track{
+     background-color: #f3f4fe;
+     border-radius: 2px;
+     box-shadow: inset 0 0 5px rgb(229, 225, 225);
+}
+
+.navigation::-webkit-scrollbar-thumb{
+     background-color: #f3f4fe;
+}
+
+.navigation.active {
+     width: 210px;
+     transition: 0.5s;
+     z-index: 5;
+}
+
+.brand {
+     display: flex;
+     align-items: center;
+     margin-bottom: 2rem;
+     padding: 1rem;
+}
+
+.brand_name {
+     font-size: 1rem;
+     font-family: Roboto;
+     line-height: 1rem;
+     margin-left: .5rem;
+     color: #767792;
+     display: none;
+}
+
+.navigation.active .brand_name {
+     display: block;
+}
+
+.brand_icon {
+     color: #f2994a;
+}
+
+.menu_toggle {
+     color: #826CA8;
+     margin-left: auto;
+     cursor: pointer;
+     position: absolute;
+     right: 0;
+}
+
+.nav_links {
+     padding-bottom: 2rem;
+     border-bottom: 1px solid #F3F4FE;
+}
+
+.nav_link {
+     padding-left: 1rem;
+     display: flex;
+     align-items: center;
+     margin-bottom: 1.2rem;
+     vertical-align: middle;
+}
+
+.nav_link a,
+.work_progress a {
+     color: #826CA8;
+     margin-left: .7rem;
+     font-size: 1.1rem;
+     font-weight: 500;
+     display: none;
+}
+
+.navigation.active .nav_link a,
+.navigation.active .work_progress a {
+     display: block;
+}
+
+.home,
+.book,
+.arrow {
+     color: #535ADF;
+     font-size: 1rem;
+}
+
+.home_link{
+     color: #535ADF !important;
+}
+
+.training,
+.statistics,
+.courses,
+.settings{
+     color: #826CA8;
+     font-size: 1rem;
+}
+
+.work_progress {
+     padding: 1rem;
+     margin: 1.4rem 0;
+}
+
+.work_progress_div {
+     display: flex;
+     align-items: center;
+     vertical-align: middle;
+     margin-bottom: 1.3rem;
+}
+
+.arrow{
+     margin-left: auto;
+     display: none;
+}
+
+.navigation.active .arrow {
+     display: block;
+}
+
+.composition,
+.typography,
+.color,
+.mesh {
+     margin-bottom: 1.5rem;
+     display: none;
+}
+
+.navigation.active .composition,
+.navigation.active .typography,
+.navigation.active .color,
+.navigation.active .mesh {
+     display: block;
+}
+
+.composition label,
+.typography label,
+.color label,
+.mesh label {
+     font-size: .9rem;
+     font-weight: 500;
+     color: #826CA8;
+}
+
+.composition_stats,
+.typography_stats,
+.color_stats,
+.mesh_stats {
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     color: #A89EB8;
+}
+
+progress {
+     height: 6px;
+     /* background-color: #efeffb; */
+}
+
