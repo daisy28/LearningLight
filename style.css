@@ -101,6 +101,12 @@ body {
   cursor: pointer;
   position: absolute;
   right: 0;
+  transition: .5s;
+}
+
+.navigation.active .menu_toggle {
+  transform: rotate(180deg);
+  transition: .5s;
 }
 
 .nav_links {
@@ -120,20 +126,24 @@ body {
   vertical-align: middle;
 }
 
-/* .nav_link:hover .nav_link a:hover  {
-     color: #535ADF;
-} */
+.nav_link:hover a,
+.nav_link:hover .icons ion-icon,
+.work_progress_home:hover
+ {
+  color: #535ADF;
+}
 
-.nav_link a,
+.nav_link_item,
 .work_progress a {
   color: #826ca8;
   margin-left: 0.7rem;
   font-size: 1.1rem;
   font-weight: 500;
   display: none;
+  margin-bottom: .3rem;
 }
 
-.navigation.active .nav_link a,
+.navigation.active .nav_link_item,
 .navigation.active .work_progress a {
   display: block;
 }
@@ -188,6 +198,10 @@ body {
 .mesh {
   margin-bottom: 1.5rem;
   display: none;
+}
+
+.mesh{
+  margin-bottom: 2.5rem;
 }
 
 .navigation.active .composition,
@@ -250,16 +264,16 @@ progress::-webkit-progress-value {
 
 .search_input_div {
   position: relative;
-  width: 100px;
+  width: 45%;
 }
 
 .search_input {
   width: 100%;
   background-color: #eff0ff;
-  padding: 0.4rem;
+  padding: 0.6rem;
   padding-left: 2rem;
   outline: none;
-  border-radius: 8px;
+  border-radius: 6px;
   border: none;
   color: #a8acd2;
   font-size: 0.7rem;
@@ -272,7 +286,7 @@ progress::-webkit-progress-value {
 .search_icon {
   position: absolute;
   left: 10px;
-  top: 5px;
+  top: 8px;
   color: #a8acd2;
 }
 
@@ -325,11 +339,14 @@ progress::-webkit-progress-value {
 .categories div {
   font-size: 0.8rem;
   background-color: #f6f7ff;
-  padding: 0.3rem 0;
-  text-align: center;
+  padding: 0.5rem 0.2rem;
   border-radius: 6px;
   color: #8f82a4;
   cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 }
 
 .categories div:hover {
@@ -349,7 +366,7 @@ progress::-webkit-progress-value {
 }
 
 .main_content_one {
-  margin-bottom: 2rem;
+  margin-bottom: 2.5rem;
 }
 
 .main_content_heading,
@@ -375,6 +392,7 @@ progress::-webkit-progress-value {
   background-color: #eff0ff;
   border-radius: 10px;
   padding: 1rem;
+  cursor: pointer;
 }
 
 .main_content_design_img {
@@ -451,6 +469,10 @@ progress::-webkit-progress-value {
   max-width: 200px;
 }
 
+.design_principles{
+  width: 180px;
+}
+
 .main_content_two_design_text h2,
 .main_content_two_design_username {
   color: #dddefa !important;
@@ -488,7 +510,7 @@ progress::-webkit-progress-value {
 
 .aside_container {
   display: grid;
-  gap: 1rem;
+  gap: 2rem;
 }
 
 .theme_categories {
@@ -566,10 +588,7 @@ progress::-webkit-progress-value {
 /* MEDIA QUERIES AND RESPONSIVENESS */
 
 @media screen and (min-width: 768px) {
-  .navigation {
-    width: 210px;
-  }
-
+  .navigation,
   .brand {
     width: 210px;
   }
@@ -625,15 +644,16 @@ progress::-webkit-progress-value {
 }
 
 @media screen and (min-width: 1024px) {
+  /* .contents{
+    grid-template-columns: 2fr 1fr;
+  } */
+
   .main_content_div {
     grid-template-columns: 2fr 1fr;
   }
 
   .aside_container {
     grid-template-columns: 2fr 1fr;
-  }
-  .main_content_heading {
-    margin-bottom: 0.6rem;
   }
 }
 
@@ -646,9 +666,14 @@ progress::-webkit-progress-value {
   }
   .aside_container {
     grid-template-columns: 1fr;
+    gap: 1.2rem;
   }
 
   .aside_teachers {
     margin-top: 1.5rem;
+  }
+
+  .teachers{
+    margin-bottom: 2rem;
   }
 }

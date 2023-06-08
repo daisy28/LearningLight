@@ -16,31 +16,31 @@
       </div>
       <div class="nav_links">
         <div class="nav_link">
-          <ion-icon name="home" class="home"></ion-icon>
-          <a href="index.html" class="home_link">Home</a>
+          <a href="index.html" class="icons"><ion-icon name="home" class="home"></ion-icon></a>
+          <a href="index.html" class="nav_link_item home_link">Home</a>
         </div>
         <div class="nav_link">
-          <ion-icon name="school" class="courses"></ion-icon>
-          <a href="home" class="">Courses</a>
+          <a href="courses" class="icons"><ion-icon name="school" class="courses"></ion-icon></a>
+          <a href="courses" class="nav_link_item">Courses</a>
         </div>
         <div class="nav_link">
-          <ion-icon name="bulb" class="training"></ion-icon>
-          <a href="home" class="">Training</a>
+          <a href="training" class="icons"><ion-icon name="bulb" class="training"></ion-icon></a>
+          <a href="training" class="nav_link_item">Training</a>
         </div>
         <div class="nav_link">
-          <ion-icon name="pie-chart" class="statistics"></ion-icon>
-          <a href="home" class="">Statistics</a>
+          <a href="statistics" class="icons"><ion-icon name="pie-chart" class="statistics"></ion-icon></a>
+          <a href="statistics" class="nav_link_item">Statistics</a>
         </div>
         <div class="nav_link">
-          <ion-icon name="cog" class="settings"></ion-icon>
-          <a href="home" class="">Settings</a>
+          <a href="settings" class="icons"><ion-icon name="cog" class="settings"></ion-icon></a>
+          <a href="settings" class="nav_link_item">Settings</a>
         </div>
       </div>
 
       <div class="work_progress">
         <div class="work_progress_div">
           <ion-icon name="book" class="book"></ion-icon>
-          <a href="homework">Homework</a>
+          <a href="homework" class="work_progress_home">Homework</a>
           <ion-icon name="arrow-forward" class="arrow"></ion-icon>
         </div>
         <div class="composition">
@@ -116,7 +116,7 @@
             <div class="main_content_div">
               <div class="main_content_design">
                 <div class="main_content_design_text">
-                  <h2>Inclusive Design Principles</h2>
+                  <h2 class="design_principles">Inclusive Design Principles</h2>
                   <div class="time">
                     <ion-icon name="pie-chart" class="time_icon"></ion-icon>
                     <p>5 min</p>
@@ -140,7 +140,7 @@
 
               <div class="main_content_design">
                 <div class="main_content_design_text">
-                  <h2>Design trends in 2020</h2>
+                  <h2>Design Trends in 2020</h2>
                   <div class="time">
                     <ion-icon name="pie-chart" class="time_icon"></ion-icon>
                     <p>1 min</p>
@@ -324,12 +324,9 @@
     <script>
       let navigation = document.querySelector(".navigation");
       let toggle = document.querySelector(".menu_toggle");
-      let main = document.querySelector("main");
       let header = document.querySelector("header");
-
       toggle.addEventListener("click", () => {
         navigation.classList.toggle("active");
-        header.classList.toggle("active");
       });
     </script>
   </body>
