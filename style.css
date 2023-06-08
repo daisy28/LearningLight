@@ -43,17 +43,17 @@ body {
 }
 
 .navigation::-webkit-scrollbar{
-     width: 2px;
+     width: 0px;
 }
 
 .navigation::-webkit-scrollbar-track{
-     background-color: #f7f8fe;
+     background-color: #ffffff;
      border-radius: 2px;
      box-shadow: inset 0 0 5px rgb(241, 238, 238);
 }
 
 .navigation::-webkit-scrollbar-thumb{
-     background-color: #f6f7fd;
+     background-color: #ffffff;
 }
 
 .navigation.active {
@@ -63,11 +63,20 @@ body {
 }
 
 .brand {
+     width: 60px;
      display: flex;
      align-items: center;
      padding: 1rem;
      height: 70px;
      border-bottom: 1px solid #F3F4FE;
+     border-right: 1px solid #F3F4FE;
+     position: fixed;
+     background-color: #fff;
+     left: 0;
+}
+
+.navigation.active .brand {
+     width: 210px;
 }
 
 .brand_name {
@@ -99,13 +108,16 @@ body {
      padding-bottom: 2rem;
      border-bottom: 1px solid #F3F4FE;
      margin-top: 3rem;
+     position: relative;
+     top: 60px;
+     z-index: -10;
 }
 
 .nav_link {
      padding-left: 1rem;
      display: flex;
      align-items: center;
-     margin-bottom: 1.2rem;
+     margin-bottom: 1.7rem;
      vertical-align: middle;
 }
 
@@ -145,6 +157,8 @@ body {
 .work_progress {
      padding: 1rem;
      margin: 1.4rem 0;
+     position: relative;
+     top: 60px;
 }
 
 .work_progress_div {
@@ -195,6 +209,7 @@ body {
      justify-content: space-between;
      align-items: center;
      color: #A89EB8;
+     margin: .5rem 0;
 }
 
 progress {
@@ -204,7 +219,7 @@ progress {
 .header {
      background-color: #fff;
      position: fixed;
-     padding: 1rem .5rem;
+     padding: 1rem;
      border-bottom: 1px solid #F3F4FE;
      top: 0;
      left: 60px;
@@ -213,11 +228,12 @@ progress {
      display: flex;
      justify-content: space-between;
      align-items: center;
+     z-index: 40;
 }
 
 .search_input_div {
      position: relative;
-     width: 140px;
+     width: 100px;
 }
 
 .search_input {
@@ -253,9 +269,14 @@ progress {
 .user_image_div {
      width: 20px;
      height: 20px;
-     border-radius: 50%;
-     background-color: #767792;
      margin-left: .8rem;
+}
+
+.user_image_div img {
+     width: 100%;
+     height: 100%;
+     object-fit: cover;
+     border-radius: 50%;
 }
 
 .user_name {
@@ -268,8 +289,232 @@ progress {
      position: relative;
      padding: 1rem;
      left: 60px;
+     right: 0;
      top: 70px;
      width: calc(100% - 60px);
+}
+
+.categories {
+     display: grid;
+     grid-template-columns: 1fr 1fr;
+     gap: 1rem;
+     margin-bottom: 3rem;
+}
+
+.categories div {
+     font-size: .8rem;
+     background-color: #F6F7FF;
+     padding: .3rem;
+     text-align: center;
+     border-radius: 6px;
+     color: #8F82A4;
+}
+
+.design {
+     background-color: #535ADF !important;
+     color: #D8D9F7 !important;
+}
+
+.contents {
+     display: grid;
+     grid-template-columns: 1fr;
+     gap: 2rem;
+}
+
+.main_content_one {
+     margin-bottom: 2rem;
+}
+
+.main_content_heading,
+.main_content_design h2 {
+     color: #8F82A4;
+     font-size: 1.1rem;
+     font-weight: 500;
+     margin-bottom: 1.5rem;
+}
+
+.main_content_heading span {
+     color: #535ADF;
+     margin-left: .3rem;
+}
+
+.main_content_design {
+     background-color: #EFF0FF;
+     border-radius: 10px;
+     padding: 1rem;
+     margin-bottom: 1.3rem;
+}
+
+.main_content_design_img {
+     /* margin-bottom: 1.5rem; */
+     width: 100px;
+     height: 100px;
+     margin-left: auto;
+}
+
+.main_content_design_img img{
+     width: 100%;
+     height: 100%;
+}
+
+.main_content_design h2 {
+     font-size: 1.3rem;
+}
+
+.main_content_design_text{
+     /* margin-bottom: 1.5rem; */
+}
+
+.time {
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     width: 85px;
+     background-color: #E3E5FE;
+     border-radius: 10px;
+     padding: .5rem;
+}
+
+.time_icon {
+     color: #6A5A8C;
+}
+
+.time p {
+     color: #8F82A4;
+}
+
+.main_content_design_user {
+     display: flex;
+     align-items: start;
+}
+
+.main_content_design_user img {
+     width: 40px;
+     height: 40px;
+     border-radius: 10px;
+     object-fit: cover;
+     margin-right: .8rem;
+}
+
+.main_content_design_user p {
+     color: #9887BC;
+}
+
+.main_content_design_username {
+     color: #8F82A4 !important;
+     font-weight: 600;
+     margin-bottom: .3rem;
+}
+
+.main_content_two_design {
+     background-image: linear-gradient(to right, #5A61E9 60%, #5057DE 70%, #4249D1 80%, #383FBB 90%);
+     height: 300px;
+     display: flex;
+     flex-direction: column;
+     justify-content: space-between;
+}
+
+.main_content_two_design_text h2,
+.main_content_two_design_username{
+     color: #DDDEFA !important;
+}
+
+.main_content_two_design_title {
+     color: #5A61E9;
+}
+
+.main_content_two_design_user {
+     margin-top: auto;
+}
+
+.main_content_design_timer {
+     background-color: #2F3163;
+     color: #DDDEFA;
+     padding: .2rem .4rem;
+     border-radius: 12px;
+     margin-left: auto;
+}
+
+.main_content_two2 {
+     display: grid;
+     grid-template-rows: 1fr 1fr;
+}
+
+.main_content_two2 h2 {
+     margin-bottom: 2rem;
+}
+
+.main_content_two2_design {
+     background-color: #5A61E9;
+}
+
+/* MEDIA QUERIES AND RESPONSIVENESS */
+
+@media screen and (min-width: 768px) {
+     .navigation {
+          width: 210px;
+     }
+
+     .brand {
+          width: 210px;
+     }
+
+     .menu_toggle,
+     .wrapper {
+          display: none;
+     }
+
+     .brand_name,
+     .nav_link a,
+     .work_progress a,
+     .arrow,
+     .composition,
+     .typography,
+     .color,
+     .mesh {
+          display: block;
+     }
+
+     .header{
+          padding: 1rem 2.5rem;
+          left: 210px;
+     }
+
+     .search_input_div {
+          width: 60%;
+}
+
+     .main{
+          padding: 2.5rem;
+          width: calc(100% - 210px);
+          left: 210px;
+     }
+
+     .categories {
+     grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.main_content_div {
+     display: grid;
+     grid-template-columns: 1fr 1fr;
+     gap: 1rem;
+}
+
+.main_content_two_design {
+     height: auto;
+}
+}
+
+@media screen and (min-width: 1024px) {
+     .main_content_div {
+     grid-template-columns: 2fr 1fr;
+}
+}
+
+@media screen and (min-width: 1280px) {
+     .contents {
+          grid-template-columns: 2fr 1fr;
+     }
 }
 
 
