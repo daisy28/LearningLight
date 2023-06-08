@@ -338,15 +338,19 @@ progress {
      margin-left: .3rem;
 }
 
-.main_content_design {
+.main_content_div {
+     display: grid;
+     gap: 1rem;
+}
+
+.main_content_design,
+.theme_categories_items {
      background-color: #EFF0FF;
      border-radius: 10px;
      padding: 1rem;
-     margin-bottom: 1.3rem;
 }
 
 .main_content_design_img {
-     /* margin-bottom: 1.5rem; */
      width: 100px;
      height: 100px;
      margin-left: auto;
@@ -359,10 +363,6 @@ progress {
 
 .main_content_design h2 {
      font-size: 1.3rem;
-}
-
-.main_content_design_text{
-     /* margin-bottom: 1.5rem; */
 }
 
 .time {
@@ -414,6 +414,10 @@ progress {
      justify-content: space-between;
 }
 
+.main_content_two_design_text h2{
+     max-width: 200px;
+}
+
 .main_content_two_design_text h2,
 .main_content_two_design_username{
      color: #DDDEFA !important;
@@ -438,6 +442,7 @@ progress {
 .main_content_two2 {
      display: grid;
      grid-template-rows: 1fr 1fr;
+     gap: 1rem;
 }
 
 .main_content_two2 h2 {
@@ -446,6 +451,80 @@ progress {
 
 .main_content_two2_design {
      background-color: #5A61E9;
+}
+
+.aside_container {
+     display: grid;
+     gap: 1rem;
+}
+
+.theme_categories {
+     display: grid;
+     grid-template-columns: 1fr 1fr;
+     grid-template-rows: 1fr 1fr;
+     gap: .2rem;
+}
+
+.theme_categories_items {
+     height: 150px;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+}
+
+.theme_categories_items_text {
+     color: #8F82A4;
+     text-align: center;
+     
+}
+
+.education,
+.work,
+.university,
+.phone {
+     height: 100px;
+     width: 100px;
+     margin-bottom: .6rem;
+     object-fit: cover;
+}
+
+.aside_teachers_heading {
+     display: flex;
+     justify-content: space-between;
+     margin-bottom: .6rem;
+}
+
+.arrow_teacher,
+.teachers_experience_no {
+     color: #535ADF;
+}
+
+.teachers {
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     margin-bottom: 1rem;
+}
+
+.teachers img {
+     width: 60px;
+     height: 60px;
+     object-fit: cover;
+     border-radius: 50%;
+}
+
+.teachers_name {
+     color: #585A7B;
+     margin-bottom: .3rem;
+     font-weight: 600;
+}
+
+.teachers_years_experience {
+     color: #BCB4C9;
+}
+
+.teachers_experience_no {
+     font-weight: 600;
 }
 
 /* MEDIA QUERIES AND RESPONSIVENESS */
@@ -503,11 +582,19 @@ progress {
 .main_content_two_design {
      height: auto;
 }
+
+.theme_categories {
+     gap: 1rem;
+}
 }
 
 @media screen and (min-width: 1024px) {
      .main_content_div {
      grid-template-columns: 2fr 1fr;
+}
+
+.aside_container {
+     grid-template-columns: 1fr 1fr;
 }
 }
 
@@ -515,6 +602,10 @@ progress {
      .contents {
           grid-template-columns: 2fr 1fr;
      }
+     .aside_container {
+     grid-template-columns: 1fr;
+}
+
 }
 
 
