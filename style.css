@@ -81,7 +81,6 @@ body {
 
 .brand_name {
      font-size: 1rem;
-     font-family: Roboto;
      line-height: 1rem;
      margin-left: .5rem;
      color: #767792;
@@ -120,6 +119,10 @@ body {
      margin-bottom: 1.7rem;
      vertical-align: middle;
 }
+
+/* .nav_link:hover .nav_link a:hover  {
+     color: #535ADF;
+} */
 
 .nav_link a,
 .work_progress a {
@@ -308,6 +311,12 @@ progress {
      text-align: center;
      border-radius: 6px;
      color: #8F82A4;
+     cursor: pointer;
+}
+
+.categories div:hover {
+     background-color: #535ADF;
+     color: #D8D9F7;
 }
 
 .design {
@@ -466,7 +475,6 @@ progress {
 }
 
 .theme_categories_items {
-     height: 150px;
      display: flex;
      flex-direction: column;
      align-items: center;
@@ -475,35 +483,34 @@ progress {
 .theme_categories_items_text {
      color: #8F82A4;
      text-align: center;
-     
 }
 
 .education,
 .work,
 .university,
 .phone {
-     height: 100px;
-     width: 100px;
-     margin-bottom: .6rem;
+     height: 80px;
+     width: 80px;
+     margin-bottom: .2rem;
      object-fit: cover;
 }
 
 .aside_teachers_heading {
      display: flex;
-     justify-content: space-between;
      margin-bottom: .6rem;
 }
 
 .arrow_teacher,
 .teachers_experience_no {
      color: #535ADF;
+     margin-left: auto;
 }
 
 .teachers {
      display: flex;
      justify-content: space-between;
      align-items: center;
-     margin-bottom: 1rem;
+     margin-bottom: 1.3rem;
 }
 
 .teachers img {
@@ -517,6 +524,10 @@ progress {
      color: #585A7B;
      margin-bottom: .3rem;
      font-weight: 600;
+}
+
+.teachers_experience {
+     margin-left: .7rem;
 }
 
 .teachers_years_experience {
@@ -594,7 +605,7 @@ progress {
 }
 
 .aside_container {
-     grid-template-columns: 1fr 1fr;
+     grid-template-columns: 2fr 1fr;
 }
 }
 
@@ -604,6 +615,10 @@ progress {
      }
      .aside_container {
      grid-template-columns: 1fr;
+}
+
+.aside_teachers {
+     margin-top: 1.5rem;
 }
 
 }
