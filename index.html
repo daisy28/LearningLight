@@ -1,306 +1,336 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-     <meta charset="UTF-8">
-     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <link rel="stylesheet" href="style.css">
-     <title>LearningLight</title>
-</head>
-<body>
-     
-     <navigation class="navigation">
-          <div class="brand">
-               <ion-icon name="sunny" class="brand_icon"></ion-icon>
-               <a href="index.html" class="brand_name ">LearningLight</a>
-               <ion-icon name="caret-forward" class="menu_toggle"></ion-icon>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>LearningLight</title>
+  </head>
+  <body>
+    <navigation class="navigation">
+      <div class="brand">
+        <ion-icon name="sunny" class="brand_icon"></ion-icon>
+        <a href="index.html" class="brand_name">LearningLight</a>
+        <ion-icon name="caret-forward" class="menu_toggle"></ion-icon>
+      </div>
+      <div class="nav_links">
+        <div class="nav_link">
+          <ion-icon name="home" class="home"></ion-icon>
+          <a href="index.html" class="home_link">Home</a>
+        </div>
+        <div class="nav_link">
+          <ion-icon name="school" class="courses"></ion-icon>
+          <a href="home" class="">Courses</a>
+        </div>
+        <div class="nav_link">
+          <ion-icon name="bulb" class="training"></ion-icon>
+          <a href="home" class="">Training</a>
+        </div>
+        <div class="nav_link">
+          <ion-icon name="pie-chart" class="statistics"></ion-icon>
+          <a href="home" class="">Statistics</a>
+        </div>
+        <div class="nav_link">
+          <ion-icon name="cog" class="settings"></ion-icon>
+          <a href="home" class="">Settings</a>
+        </div>
+      </div>
+
+      <div class="work_progress">
+        <div class="work_progress_div">
+          <ion-icon name="book" class="book"></ion-icon>
+          <a href="homework">Homework</a>
+          <ion-icon name="arrow-forward" class="arrow"></ion-icon>
+        </div>
+        <div class="composition">
+          <label for="composition">Basics of Composition</label>
+          <progress id="composition" value="80" max="100">80%</progress>
+          <div class="composition_stats">
+            <p>4/5</p>
+            <p>80%</p>
           </div>
-          <div class="nav_links">
-               <div class="nav_link">
-                    <ion-icon name="home" class="home"></ion-icon>
-                    <a href="home" class="home_link">Home</a>
-               </div>
-               <div class="nav_link">
-                    <ion-icon name="school" class="courses"></ion-icon>
-                    <a href="home" class="">Courses</a>
-               </div>
-               <div class="nav_link">
-                    <ion-icon name="bulb" class="training"></ion-icon>
-                    <a href="home" class="">Training</a>
-               </div>
-               <div class="nav_link">
-                    <ion-icon name="pie-chart" class="statistics"></ion-icon>
-                    <a href="home" class="">Statistics</a>
-               </div>
-               <div class="nav_link">
-                    <ion-icon name="cog" class="settings"></ion-icon>
-                    <a href="home" class="">Settings</a>
-               </div>
+        </div>
+        <div class="typography">
+          <label for="typography">Typography Basics</label>
+          <progress id="typography" value="60" max="100">60%</progress>
+          <div class="typography_stats">
+            <p>3/5</p>
+            <p>60%</p>
+          </div>
+        </div>
+        <div class="color">
+          <label for="color">Color Basics</label>
+          <progress id="color" value="40" max="100">40%</progress>
+          <div class="color_stats">
+            <p>2/5</p>
+            <p>40%</p>
+          </div>
+        </div>
+        <div class="mesh">
+          <label for="mesh">Modular Mesh</label>
+          <progress id="mesh" value="60" max="100">40%</progress>
+          <div class="mesh_stats">
+            <p>3/5</p>
+            <p>60%</p>
+          </div>
+        </div>
+      </div>
+      <div class="wrapper"></div>
+    </navigation>
+    <header class="header">
+      <div class="search_input_div">
+        <input
+          type="text"
+          name="search"
+          id="search"
+          placeholder="Search"
+          class="search_input"
+        />
+        <ion-icon name="search" class="search_icon"></ion-icon>
+      </div>
+      <div class="user_info">
+        <ion-icon name="notifications" class="bell_icon"></ion-icon>
+        <div class="user_image_div">
+          <img src="images/woman2.jpg" alt="" />
+        </div>
+        <p class="user_name">Debra Cooper</p>
+      </div>
+    </header>
+
+    <main class="main">
+      <div class="categories">
+        <div>English</div>
+        <div>Product</div>
+        <div class="design">UX/UI Design</div>
+        <div>Photography</div>
+        <div>Time Management</div>
+        <div>Development</div>
+        <div>Graphic Design</div>
+        <div>History of England</div>
+      </div>
+      <section class="contents">
+        <div class="main_content">
+          <div class="main_content_one">
+            <h2 class="main_content_heading">Articles <span>162</span></h2>
+            <div class="main_content_div">
+              <div class="main_content_design">
+                <div class="main_content_design_text">
+                  <h2>Inclusive Design Principles</h2>
+                  <div class="time">
+                    <ion-icon name="pie-chart" class="time_icon"></ion-icon>
+                    <p>5 min</p>
+                  </div>
+                </div>
+
+                <div class="main_content_design_img">
+                  <img src="images/books.png" alt="" />
+                </div>
+
+                <div class="main_content_design_user">
+                  <div>
+                    <img src="images/man1.jpg" alt="" />
+                  </div>
+                  <div>
+                    <p class="main_content_design_username">Rosemary Steward</p>
+                    <p>Feb 11</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="main_content_design">
+                <div class="main_content_design_text">
+                  <h2>Design trends in 2020</h2>
+                  <div class="time">
+                    <ion-icon name="pie-chart" class="time_icon"></ion-icon>
+                    <p>1 min</p>
+                  </div>
+                </div>
+
+                <div class="main_content_design_img globe">
+                  <img src="images/globe.png" alt="" />
+                </div>
+
+                <div class="main_content_design_user">
+                  <div>
+                    <img src="images/woman2.jpg" alt="" />
+                  </div>
+                  <div>
+                    <p class="main_content_design_username">Bessie Bell</p>
+                    <p>Feb 4</p>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
 
-          <div class="work_progress">
-               <div class="work_progress_div">
-                    <ion-icon name="book" class="book"></ion-icon>
-                    <a href="homework">Homework</a>
-                    <ion-icon name="arrow-forward" class="arrow"></ion-icon>
-               </div>
-               <div class="composition">
-                    <label for="composition">Basics of Composition</label>
-                    <progress id="composition" value="80" max="100">80%</progress>
-                    <div class="composition_stats">
-                         <p>4/5</p>
-                         <p>80%</p>
+          <div class="main_content_two">
+            <h2 class="main_content_heading">Video Lessons <span>124</span></h2>
+            <div class="main_content_div">
+              <div class="main_content_design main_content_two_design">
+                <div
+                  class="main_content_design_text main_content_two_design_text"
+                >
+                  <h2>We create effective texts for landing</h2>
+                </div>
+                <div
+                  class="main_content_design_user main_content_two_design_user"
+                >
+                  <div>
+                    <img src="images/man2.jpg" alt="" />
+                  </div>
+                  <div>
+                    <p
+                      class="main_content_design_username main_content_two_design_username"
+                    >
+                      Randall Mccoy
+                    </p>
+                    <p class="main_content_two_design_title">
+                      CEO, California Tech.
+                    </p>
+                  </div>
+                  <div class="main_content_design_timer">10:08</div>
+                </div>
+              </div>
+
+              <div class="main_content_two2">
+                <div class="main_content_design main_content_two2_design">
+                  <div
+                    class="main_content_design_text main_content_two_design_text"
+                  >
+                    <h2>We make a website business card. Training.</h2>
+                  </div>
+                  <div
+                    class="main_content_design_user main_content_two_design_user"
+                  >
+                    <div>
+                      <img src="images/man3.jpg" alt="" />
                     </div>
-               </div>
-               <div class="typography">
-                    <label for="typography">Typography Basics</label>
-                    <progress id="typography" value="60" max="100">60%</progress>
-                    <div class="typography_stats">
-                         <p>3/5</p>
-                         <p>60%</p>
+                    <div>
+                      <p
+                        class="main_content_design_username main_content_two_design_username"
+                      >
+                        Jorge Murphy
+                      </p>
+                      <p class="main_content_two_design_title">
+                        Senior Designer
+                      </p>
                     </div>
-               </div>
-               <div class="color">
-                    <label for="color">Color Basics</label>
-                    <progress id="color" value="40" max="100">40%</progress>
-                    <div class="color_stats">
-                         <p>2/5</p>
-                         <p>40%</p>
+                  </div>
+                </div>
+
+                <div class="main_content_design main_content_two2_design">
+                  <div
+                    class="main_content_design_text main_content_two_design_text"
+                  >
+                    <h2>Web animation. The basics</h2>
+                  </div>
+                  <div
+                    class="main_content_design_user main_content_two_design_user"
+                  >
+                    <div>
+                      <img src="images/man4.jpg" alt="" />
                     </div>
-               </div>
-               <div class="mesh">
-                    <label for="mesh">Modular Mesh</label>
-                    <progress id="mesh" value="60" max="100">40%</progress>
-                    <div class="mesh_stats">
-                         <p>3/5</p>
-                         <p>60%</p>
+                    <div>
+                      <p
+                        class="main_content_design_username main_content_two_design_username"
+                      >
+                        Randall Richards
+                      </p>
+                      <p class="main_content_two_design_title">Art Directorr</p>
                     </div>
-               </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
-          <div class="wrapper"></div>
-     </navigation>
-     <header class="header">
-          <div class="search_input_div">
-               <input type="text" name="search" id="search" placeholder="Search" class="search_input">
-               <ion-icon name="search" class="search_icon"></ion-icon>
+        </div>
+
+        <aside>
+          <div class="aside_container">
+            <div class="aside_theme">
+              <h2 class="main_content_heading">Theme Chats <span>24</span></h2>
+              <div class="theme_categories">
+                <div class="theme_categories_items">
+                  <img src="images/education.png" alt="" class="education" />
+                  <p class="theme_categories_items_text">Education</p>
+                </div>
+                <div class="theme_categories_items">
+                  <img src="images/work.png" alt="" class="work" />
+                  <p class="theme_categories_items_text">Work</p>
+                </div>
+                <div class="theme_categories_items">
+                  <img src="images/university.jpg" alt="" class="university" />
+                  <p class="theme_categories_items_text">University</p>
+                </div>
+                <div class="theme_categories_items">
+                  <img src="images/phone.png" alt="" class="phone" />
+                  <p class="theme_categories_items_text">Technology</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="aside_teachers">
+              <div class="aside_teachers_heading">
+                <h2 class="main_content_heading">Top Teachers</h2>
+                <ion-icon name="arrow-forward" class="arrow_teacher"></ion-icon>
+              </div>
+              <div class="teachers">
+                <img src="images/man1.jpg" alt="" />
+                <div class="teachers_experience">
+                  <p class="teachers_name">Marvin Hawkins</p>
+                  <p class="teachers_years_experience">5 years experience</p>
+                </div>
+                <div class="teachers_experience_no">5.0</div>
+              </div>
+              <div class="teachers">
+                <img src="images/man2.jpg" alt="" />
+                <div class="teachers_experience">
+                  <p class="teachers_name">Arthur McKinney</p>
+                  <p class="teachers_years_experience">6 years experience</p>
+                </div>
+                <div class="teachers_experience_no">4.9</div>
+              </div>
+              <div class="teachers">
+                <img src="images/man3.jpg" alt="" />
+                <div class="teachers_experience">
+                  <p class="teachers_name">Bessie Watson</p>
+                  <p class="teachers_years_experience">2 years experience</p>
+                </div>
+                <div class="teachers_experience_no">4.8</div>
+              </div>
+              <div class="teachers">
+                <img src="images/man4.jpg" alt="" />
+                <div class="teachers_experience">
+                  <p class="teachers_name">Albert Bell</p>
+                  <p class="teachers_years_experience">3 years experience</p>
+                </div>
+                <div class="teachers_experience_no">4.8</div>
+              </div>
+            </div>
           </div>
-          <div class="user_info">
-               <ion-icon name="notifications" class="bell_icon"></ion-icon>
-               <div class="user_image_div">
-                    <img src="images/woman2.jpg" alt="">
-               </div>
-               <p class="user_name">Debra Cooper</p>
-          </div>
-     </header>
+        </aside>
+      </section>
+    </main>
 
-     <main class="main">
-          <div class="categories">
-               <div>English</div>
-               <div>Product</div>
-               <div class="design">UX/UI Design</div>
-               <div>Photography</div>
-               <div>Time Management</div>
-               <div>Development</div>
-               <div>Graphic Design</div>
-               <div>History of England</div>
-          </div>
-          <section class="contents">
-               <div class="main_content">
-                    <div class="main_content_one">
-                    <h2 class="main_content_heading">Articles <span>162</span></h2>
-                    <div class="main_content_div">
-                    <div class="main_content_design">
-                         <div class="main_content_design_text">
-                              <h2>Inclusive Design Principles</h2>
-                              <div class="time">
-                                   <ion-icon name="pie-chart" class="time_icon"></ion-icon>
-                                   <p>5 min</p>
-                              </div>
-                         </div>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    <script>
+      let navigation = document.querySelector(".navigation");
+      let toggle = document.querySelector(".menu_toggle");
+      let main = document.querySelector("main");
+      let header = document.querySelector("header");
 
-                         <div class="main_content_design_img">
-                              <img src="images/books.png" alt="">
-                         </div>
-
-                         <div class="main_content_design_user">
-                              <div>
-                                   <img src="images/man1.jpg" alt="">
-                              </div>
-                              <div>
-                                   <p class="main_content_design_username">Rosemary Steward</p>
-                                   <p>Feb 11</p>
-                              </div>
-                         </div>
-                    </div>
-
-                    <div class="main_content_design">
-                         <div class="main_content_design_text">
-                              <h2>Design trends in 2020</h2>
-                              <div class="time">
-                                   <ion-icon name="pie-chart" class="time_icon"></ion-icon>
-                                   <p>1 min</p>
-                              </div>
-                         </div>
-                    
-                         <div class="main_content_design_img globe">
-                              <img src="images/globe.png" alt="">
-                         </div>
-                    
-                         <div class="main_content_design_user">
-                              <div>
-                                   <img src="images/woman2.jpg" alt="">
-                              </div>
-                              <div>
-                                   <p class="main_content_design_username">Bessie Bell</p>
-                                   <p>Feb 4</p>
-                              </div>
-                         </div>
-                    </div>
-                    </div>
-                    </div>
-
-                    <div class="main_content_two">
-                         <h2 class="main_content_heading">Video Lessons <span>124</span></h2>
-                         <div class="main_content_div">
-                              <div class="main_content_design main_content_two_design">
-                                   <div class="main_content_design_text main_content_two_design_text">
-                                        <h2>We create effective texts for landing</h2>
-                                   </div>
-                                   <div class="main_content_design_user main_content_two_design_user">
-                                        <div>
-                                             <img src="images/man2.jpg" alt="">
-                                        </div>
-                                        <div>
-                                             <p class="main_content_design_username main_content_two_design_username">Randall Mccoy</p>
-                                             <p class="main_content_two_design_title">CEO, California Tech.</p>
-                                        </div>
-                                        <div class="main_content_design_timer">10:08</div>
-                                   </div>
-                              </div>
-
-                              <div class="main_content_two2">
-                                   <div class="main_content_design main_content_two2_design">
-                                        <div class="main_content_design_text main_content_two_design_text">
-                                             <h2>We make a website business card. Training. </h2>
-                                        </div>
-                                        <div class="main_content_design_user main_content_two_design_user">
-                                             <div>
-                                                  <img src="images/man3.jpg" alt="">
-                                             </div>
-                                             <div>
-                                                  <p class="main_content_design_username main_content_two_design_username">Jorge Murphy</p>
-                                                  <p class="main_content_two_design_title">Senior Designer</p>
-                                             </div>
-                                        </div>
-                                   </div>
-
-                                   <div class="main_content_design main_content_two2_design">
-                                        <div class="main_content_design_text main_content_two_design_text">
-                                             <h2>Web animation. The basics </h2>
-                                        </div>
-                                        <div class="main_content_design_user main_content_two_design_user">
-                                             <div>
-                                                  <img src="images/man4.jpg" alt="">
-                                             </div>
-                                             <div>
-                                                  <p class="main_content_design_username main_content_two_design_username">Randall Richards</p>
-                                                  <p class="main_content_two_design_title">Art Directorr</p>
-                                             </div>
-                                        </div>
-                                   </div>
-                              </div>
-                              
-                         </div>
-                    </div>
-
-               </div>
-
-
-               <aside>
-                    <div class="aside_container">
-                    <div class="aside_theme">
-                         <h2 class="main_content_heading">Theme Chats <span>24</span></h2>
-                         <div class="theme_categories">
-                              <div class="theme_categories_items">
-                                   <img src="images/education.png" alt="" class="education">
-                                   <p class="theme_categories_items_text">Education</p>
-                              </div>
-                              <div class="theme_categories_items">
-                                   <img src="images/work.png" alt="" class="work">
-                                   <p class="theme_categories_items_text">Work</p>
-                              </div>
-                              <div class="theme_categories_items">
-                                   <img src="images/university.jpg" alt="" class="university">
-                                   <p class="theme_categories_items_text">University</p>
-                              </div>
-                              <div class="theme_categories_items">
-                                   <img src="images/phone.png" alt="" class="phone">
-                                   <p class="theme_categories_items_text">Technology</p>
-                              </div>
-
-                         </div>
-                    </div>
-
-                    <div class="aside_teachers">
-                         <div  class="aside_teachers_heading">
-                              <h2 class="main_content_heading">Top Teachers</h2>
-                              <ion-icon name="arrow-forward" class="arrow_teacher"></ion-icon>
-                         </div>
-                         <div class="teachers">
-                              <img src="images/man1.jpg" alt="">
-                              <div class="teachers_experience">
-                                   <p class="teachers_name">Marvin Hawkins</p>
-                                   <p class="teachers_years_experience">5 years experience</p>
-                              </div>
-                              <div class="teachers_experience_no">5.0</div>
-                         </div>
-                         <div class="teachers">
-                              <img src="images/man2.jpg" alt="">
-                              <div class="teachers_experience">
-                                   <p class="teachers_name">Arthur McKinney</p>
-                                   <p class="teachers_years_experience">6 years experience</p>
-                              </div>
-                              <div class="teachers_experience_no">4.9</div>
-                         </div>
-                         <div class="teachers">
-                              <img src="images/man3.jpg" alt="">
-                              <div class="teachers_experience">
-                                   <p class="teachers_name">Bessie Watson</p>
-                                   <p class="teachers_years_experience">2 years experience</p>
-                              </div>
-                              <div class="teachers_experience_no">4.8</div>
-                         </div>
-                         <div class="teachers">
-                              <img src="images/man4.jpg" alt="">
-                              <div class="teachers_experience">
-                                   <p class="teachers_name">Albert Bell</p>
-                                   <p class="teachers_years_experience">3 years experience</p>
-                              </div>
-                              <div class="teachers_experience_no">4.8</div>
-                         </div>
-                    </div>
-                    </div>
-               </aside>
-          </section>
-     </main>
-     
-
-
-
-
- <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-<script>
-     let navigation = document.querySelector(".navigation");
-     let toggle = document.querySelector(".menu_toggle");
-     let main = document.querySelector("main");
-     let header = document.querySelector("header");
-
-     toggle.addEventListener("click", () => {
-     navigation.classList.toggle("active");
-     header.classList.toggle("active")
-     });
-     
-</script>
-</body>
+      toggle.addEventListener("click", () => {
+        navigation.classList.toggle("active");
+        header.classList.toggle("active");
+      });
+    </script>
+  </body>
 </html>
